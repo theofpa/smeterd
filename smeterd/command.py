@@ -30,7 +30,7 @@ class ReadMeterCommand(Command):
     args = [
         arg('--serial-port', default=DEFAULT_SERIAL, metavar=DEFAULT_SERIAL,
             help='serial port to read packets from (defaults to %s)' % DEFAULT_SERIAL),
-        arg('--baudrate', default=9600,
+        arg('--baudrate', default=115200,
             help='baudrate for the serial connection'),
         arg('--tsv', action='store_true',
             help='display packet in tab seperated value form'),
